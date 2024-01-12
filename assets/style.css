@@ -12,6 +12,7 @@ body {
   align-items: center;
   align-content: stretch;
   background-color: bisque;
+  margin: 10px;
 }
 
 .randombtn {
@@ -19,6 +20,7 @@ body {
   overflow: hidden;
   height: 3rem;
   padding: 0 2rem;
+  margin: 10px;
   border-radius: 1.5rem;
   background: #3d3a4e;
   background-size: 400%;
@@ -28,6 +30,11 @@ body {
 }
 .randombtn:hover::before {
   transform: scaleX(1);
+}
+.randombtn__text {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
 }
 .randombtn::before {
   content: "";
@@ -50,4 +57,20 @@ body {
   justify-content: center;
   align-items: center;
   align-content: stretch;
+}
+.quoteSection__quote {
+  margin: 10px;
+  font-style: italic;
+  font-size: larger;
+  text-align: center;
+}
+.quoteSection__img {
+  margin: 10px;
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+.quoteSection__name {
+  margin: 10px;
+  font-size: 50px;
 }/*# sourceMappingURL=style.css.map */

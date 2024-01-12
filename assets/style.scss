@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Raleway|Droid+Sans|Roboto+Slab:400,700');
 
 
@@ -10,12 +13,14 @@
 
 body {
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
     background-color: bisque;
+
+    margin: 10px;
 }
 
 .title {}
@@ -25,6 +30,7 @@ body {
     overflow: hidden;
     height: 3rem;
     padding: 0 2rem;
+    margin: 10px;
     border-radius: 1.5rem;
     background: #3d3a4e;
     background-size: 400%;
@@ -34,6 +40,12 @@ body {
 
     &:hover::before {
         transform: scaleX(1);
+    }
+
+    &__text {
+        position: relative;
+        z-index: 1;
+        font-size: 20px;
     }
 
     &::before {
@@ -49,30 +61,40 @@ body {
         background: linear-gradient(82.3deg,
                 rgb(195, 148, 90),
                 rgb(184, 103, 5));
+
         transition: all 0.475s;
     }
 }
 
-
-
-// .button-content {
-//     position: relative;
-//     z-index: 1;
-// }
-
-
-
 .quoteSection {
 
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
-    &__quote {}
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
 
-    &__img {}
+    &__quote {
+        margin: 10px;
+        font-style: italic;
+        font-size: larger;
+        text-align: center;
+    }
 
-    &__name {}
+    &__img {
+        margin: 10px;
+        width: 400px;
+        height: auto;
+        border-radius: 50%;
+        
+
+
+    }
+
+    &__name {
+        margin: 10px;
+        font-size: 50px;
+
+    }
 }
